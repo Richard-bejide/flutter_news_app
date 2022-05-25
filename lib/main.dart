@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_news_app/news_page.dart';
+import 'package:flutter_news_app/views/news_page.dart';
 import 'package:provider/provider.dart';
-import 'package:flutter_news_app/news_service.dart';
-import 'package:flutter_news_app/news_change_notifier.dart';
+import 'package:flutter_news_app/services/news_service.dart';
+import 'package:flutter_news_app/view_models/news_change_notifier.dart';
 
 void main() => runApp(MyApp());
 

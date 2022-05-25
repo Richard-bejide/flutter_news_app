@@ -1,5 +1,5 @@
 // import 'package:flutter_lorem/flutter_lorem.dart';
-import 'package:flutter_news_app/article_model.dart';
+import 'package:flutter_news_app/models/article_model.dart';
 
 class NewsService {
 //simulating a remote database

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_news_app/article_model.dart';
-import 'package:flutter_news_app/news_service.dart';
+import 'package:flutter_news_app/models/article_model.dart';
+import 'package:flutter_news_app/services/news_service.dart';
 
 class NewsChangeNotifier extends ChangeNotifier {
   final NewsService _newsService;
@@ -14,6 +14,10 @@ class NewsChangeNotifier extends ChangeNotifier {
   bool get isLoading => _isLoading;
 
   Future<void> getArticles() async {
-   await  _newsService.getArticles();
+    _isLoading = true;
+    notifyListeners();
+    _articles = await _newsService.getArticles();
+    _isLoading = false;
+    notifyListeners();
   }
 }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_news_app/article_page.dart';
-import 'package:flutter_news_app/news_change_notifier.dart';
+import 'package:flutter_news_app/views/article_page.dart';
+import 'package:flutter_news_app/view_models/news_change_notifier.dart';
 import 'package:provider/provider.dart';
 
 class NewsPage extends StatefulWidget {
